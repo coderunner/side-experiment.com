@@ -1,2 +1,14 @@
-<h1>side-experiment</h1>
-<h2>...where the creativity begins...</h2>
+---
+layout: default
+title: Side-Experiment
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+	{{ post.content }}
+	</li>
+    {% endfor %}
+  </ul>
+</div>
