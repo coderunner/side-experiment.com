@@ -3,31 +3,20 @@
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
-   <meta name="author" content="Felix Trepanier" />   
+   <meta name="author" content="Felix Trepanier" />
+   <link rel="stylesheet" href="/css/style.css" type="text/css" />   
 </head>
 <body>
-
-<div class="site">
-  <div class="title">
-    <a href="/">Side-Experiment</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Felix Trepanier<br />
-        felixtrepanier@gmail.com
-      </p>
+  <div id="container">
+    <div id="header" class="menubar">
+      &middot; <a class="name" href="/">side-experiment</a> &middot; <a href="/about.html">about</a> &middot; <a class="name" href="http://pside.felixtrepanier.net">p-side</a> &middot; <a class="name" href="http://tside.felixtrepanier.net">t-side</a> &middot; <a href="http://github.com/felixtrepanier">github</a> &middot; <a href="http://twitter.com/felixtrepanier/">twitter</a> &middot; 
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/felixtrepanier">github.com/felixtrepanier</a><br />
-        <a href="http://twitter.com/felixtrepanier/">twitter.com/felixtrepanier</a><br />
-      </p>
+    <div id="main">
+      {{ content }}
     </div>
+    <div class="license">
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Side-Experiment</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>
   </div>
-</div>
-</body>
+  </div>
+</body> 
 </html>
